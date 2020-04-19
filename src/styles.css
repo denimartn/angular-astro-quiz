@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+@import "@angular/material/prebuilt-themes/pink-bluegrey.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: "Roboto Mono", monospace;
+  background: url("https://cdn.dribbble.com/users/618554/screenshots/11097403/media/bb1edd2a4b719e8e17475973a45b0897.png");
+  background-size: cover;
+  background-position: center;
+}

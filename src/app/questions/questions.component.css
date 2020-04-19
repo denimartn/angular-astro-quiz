@@ -1,0 +1,50 @@
+main {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.row {
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 0 16px;
+}
+
+.form-wrapper {
+  padding: 50px;
+}
+
+.question-wrapper {
+  padding: 16px;
+  font-size: 20px;
+  color: mediumpurple;
+  margin-bottom: 40px;
+}
+
+.choice {
+  border: 2px solid black;
+  padding: 24px;
+  margin-bottom: 10px;
+  color: white;
+  border: 1px solid grey;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+input {
+  cursor: pointer;
+}
+
+input[type="radio"] {
+  margin-right: 8px;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}

@@ -1,0 +1,15 @@
+<main>
+  <div class="row">
+    <div class="score-wrapper">
+      <h1>SCORE:</h1>
+      <p>You got {{ res }} correct answers out of 7</p>
+    </div>
+    <div *ngIf="res < 7; then wrong; else right"></div>
+    <ng-template class="box" #wrong>
+      <button mat-stroked-button routerLink="../">Try again</button>
+    </ng-template>
+    <ng-template class="box" #right>
+      <button mat-stroked-button routerLink="">Back home</button>
+    </ng-template>
+  </div>
+</main>

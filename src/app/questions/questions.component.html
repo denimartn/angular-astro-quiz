@@ -1,0 +1,269 @@
+<main>
+  <div class="row">
+    <div class="form-wrapper">
+      <form>
+        <div *ngIf="step === 0">
+          <div class="question-wrapper">
+            <h2>Q1: How fast does light travel?</h2>
+          </div>
+          <div class="choice">
+            <label>
+              <input
+                type="radio"
+                class="input"
+                name="light"
+                value="300000 km/s"
+                (click)="onClick1($event)"
+              />300000 km/s</label
+            >
+            <br />
+          </div>
+          <div class="choice">
+            <label
+              ><input
+                type="radio"
+                class="input"
+                name="light"
+                value="200000 km/s"
+                (click)="onClick1($event)"
+              />200000 km/s</label
+            ><br />
+          </div>
+          <div class="choice">
+            <label
+              ><input
+                type="radio"
+                class="input"
+                name="light"
+                value="400000 km/s"
+                (click)="onClick1($event)"
+              />400000 km/s</label
+            ><br />
+          </div>
+          <button mat-stroked-button (click)="onClick()" type="button">
+            Next
+          </button>
+        </div>
+        <div *ngIf="step === 1">
+          <div class="question-wrapper">
+            <h2>Q2: Which is the biggest planet of our solar system?</h2>
+          </div>
+          <div class="choice">
+            <label
+              ><input
+                type="radio"
+                class="input"
+                name="planet"
+                value="saturn"
+                (click)="onClick2($event)"
+              />Saturn</label
+            ><br />
+          </div>
+          <div class="choice">
+            <label
+              ><input
+                type="radio"
+                class="input"
+                name="planet"
+                value="jupiter"
+                (click)="onClick2($event)"
+              />Jupiter</label
+            ><br />
+          </div>
+          <div class="choice">
+            <label
+              ><input
+                type="radio"
+                class="input"
+                name="planet"
+                value="sun"
+                (click)="onClick2($event)"
+              />Sun</label
+            ><br />
+          </div>
+          <button mat-stroked-button (click)="onClick()" type="button">
+            Next
+          </button>
+        </div>
+        <div *ngIf="step === 2">
+          <div class="question-wrapper">
+            <h2>Q3: More is red, more a star is...</h2>
+          </div>
+          <div class="choice">
+            <label
+              ><input
+                type="radio"
+                class="input"
+                name="color"
+                value="cold"
+                (click)="onClick3($event)"
+              />Cold</label
+            ><br />
+          </div>
+          <div class="choice">
+            <label
+              ><input
+                type="radio"
+                class="input"
+                name="color"
+                value="hot"
+                (click)="onClick3($event)"
+              />Hot</label
+            ><br />
+          </div>
+          <button mat-stroked-button (click)="onClick()" type="button">
+            Next
+          </button>
+        </div>
+        <div *ngIf="step === 3">
+          <div class="question-wrapper">
+            <h2>Q4: How much is the force of earth's gravity?</h2>
+          </div>
+          <div class="choice">
+            <label
+              ><input
+                type="radio"
+                class="input"
+                name="gravity"
+                value="2g"
+                (click)="onClick4($event)"
+              />2g</label
+            ><br />
+          </div>
+          <div class="choice">
+            <label
+              ><input
+                type="radio"
+                class="input"
+                name="gravity"
+                value="1g"
+                (click)="onClick4($event)"
+              />1g</label
+            ><br />
+          </div>
+          <div class="choice">
+            <label
+              ><input
+                type="radio"
+                class="input"
+                name="gravity"
+                value="1.5g"
+                (click)="onClick4($event)"
+              />1.5g</label
+            ><br />
+          </div>
+          <button mat-stroked-button (click)="onClick()" type="button">
+            Next
+          </button>
+        </div>
+        <div *ngIf="step === 4">
+          <div class="question-wrapper">
+            <h2>Q5: What's a supernova?</h2>
+          </div>
+          <div class="choice">
+            <label
+              ><input
+                type="radio"
+                class="input"
+                name="supernova"
+                value="a black hole explosion"
+                (click)="onClick5($event)"
+              />A black hole explosion</label
+            ><br />
+          </div>
+          <div class="choice">
+            <label
+              ><input
+                type="radio"
+                class="input"
+                name="supernova"
+                value="a planet explosion"
+                (click)="onClick5($event)"
+              />A planet explosion</label
+            ><br />
+          </div>
+          <div class="choice">
+            <label
+              ><input
+                type="radio"
+                class="input"
+                name="supernova"
+                value="a star explosion"
+                (click)="onClick5($event)"
+              />A star explosion</label
+            ><br />
+          </div>
+          <button mat-stroked-button (click)="onClick()" type="button">
+            Next
+          </button>
+        </div>
+        <div *ngIf="step === 5">
+          <div class="question-wrapper">
+            <h2>Q6: What was the big bang?</h2>
+          </div>
+          <div class="choice">
+            <label
+              ><input
+                type="radio"
+                class="input"
+                name="bigbang"
+                value="expansion of space"
+                (click)="onClick6($event)"
+              />Expansion of space</label
+            ><br />
+          </div>
+          <div class="choice">
+            <label
+              ><input
+                type="radio"
+                class="input"
+                name="bigbang"
+                value="explosion of something into space"
+                (click)="onClick6($event)"
+              />Explosion of something into space</label
+            ><br />
+          </div>
+          <button mat-stroked-button (click)="onClick()" type="button">
+            Next
+          </button>
+        </div>
+        <div *ngIf="step === 6">
+          <div class="question-wrapper">
+            <h2>Q7: Can we go faster than light?</h2>
+          </div>
+          <div class="choice">
+            <label
+              ><input
+                type="radio"
+                class="input"
+                name="faster"
+                value="yes"
+                (click)="onClick7($event)"
+              />Yes</label
+            ><br />
+          </div>
+          <div class="choice">
+            <label
+              ><input
+                type="radio"
+                class="input"
+                name="faster"
+                value="no"
+                (click)="onClick7($event)"
+              />No</label
+            ><br />
+          </div>
+        </div>
+      </form>
+      <div *ngIf="step === 6" class="center">
+        <button
+          mat-stroked-button
+          (click)="onSubmit()"
+          routerLink="../quiz/result"
+        >
+          Submit
+        </button>
+      </div>
+    </div>
+  </div>
+</main>
